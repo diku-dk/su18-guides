@@ -1,0 +1,22 @@
+\documentclass[a4paper]{article}
+
+\usepackage{su17}
+
+\input{\dirpath preamble}
+
+\setenumerate[1]{label=\thesection.\arabic*.}
+\setenumerate[2]{label*=\arabic*.}
+
+\usepackage{soul} % Multiline underline, etc.
+
+\newcommand{\updatedbox}[1]{\small\fbox{\textsc{Ver.\@ #1}}}
+\newcommand{\updated}[2]{\ul{#1}\marginpar{\updatedbox{#2}}}
+\newcommand{\updatepar}[1]{\marginpar{\updatedbox{#1}}}
+
+\begin{document}
+
+\maketitle
+
+\input{\dirpath document}
+
+\end{document}
