@@ -19,9 +19,9 @@
 % OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 % SOFTWARE.
 
-\ProvidesPackage{su17}
+\ProvidesPackage{su18}
 
-%% Version 1.3
+%% Version 1.4
 
 %%%
 % Parse options
@@ -95,7 +95,12 @@
 % Links and metadata (in PDFs).
 \RequirePackage{url}
 \PassOptionsToPackage{backref=page}{hyperref} % backrefs in references
-\PassOptionsToPackage{colorlinks=true}{hyperref} % color, not box the links
+
+
+% colorlinks does not play well with menukeys, so we'll just hide them instead.
+%\PassOptionsToPackage{colorlinks=true}{hyperref} % color, not box the links
+\PassOptionsToPackage{hidelinks}{hyperref}
+
 \PassOptionsToPackage{pdftex}{hyperref} % THIS IS PDF!
 \RequirePackage{hyperref}
 \hypersetup
@@ -238,9 +243,9 @@
 frame=lines,
 framesep=2mm,
 baselinestretch=1.2,
-%bgcolor=LightGray,
+%bgcolor=lightgray,
 fontsize=\footnotesize,
-linenos
+%linenos
 }
 %%%
 
@@ -251,8 +256,8 @@ linenos
 %%%
 
 %%%
-% Software Development 2017 Overrides
-\setCourse{Software Development 2017}
+% Software Development 2018 Overrides
+\setCourse{Software Development 2018}
 %%%
 
 %%%
@@ -283,4 +288,13 @@ linenos
 %%%
 % TikZ!
 \RequirePackage{tikz}
+%%%
+
+%%%
+% Software Development 2017 Additions
+\NewDocumentCommand\inputcsharp{mmm}{%
+  \inputminted[firstline=#1,lastline=#2]{csharp}{\dirpath #3.cs}%
+}
+
+\RequirePackage{menukeys}
 %%%
