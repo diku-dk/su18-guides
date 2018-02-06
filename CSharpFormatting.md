@@ -12,36 +12,24 @@ way of expressing things (within the limits of what our Style Guide allows).
 ```csharp
 using System;
 
-namespace MyNamespace
-{
-    public class MyClass<MyType> : IMyInterface
-    {
-        private int MyProperty
-        {
-            get;
-            private set;
-        }
+namespace MyNamespace {
+    public class MyClass<MyType> : IMyInterface {
+        private int MyProperty { get; private set; }
         
         protected int myValue;
         
-        public MyClass(int myValue)
-        {
+        public MyClass(int myValue) {
             this.myValue = myValue;
         }
         
-        public override string ToString()
-        {
+        public override string ToString() {
             return String.Format("myValue: {0}", myValue);
         }
         
-        public void MyInterfaceMethod(int arg1, int arg2)
-        {
-            if (myValue < arg1)
-            {
+        public void MyInterfaceMethod(int arg1, int arg2) {
+            if (myValue < arg1) {
                 myValue += arg2;
-            }
-            else
-            {
+            } else {
                 myValue -= arg1;
             }
         }
