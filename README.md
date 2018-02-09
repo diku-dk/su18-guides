@@ -2,7 +2,7 @@
 
 ## Report Writing
 
-* [Writing Technical Reports](diku-dk/su18-guides/raw/v1.0/files/techReport.pdf)
+* [Writing Technical Reports](/diku-dk/su18-guides/raw/v1.0/files/techReport.pdf)
 * [Report Formatting Guide](guides/ReportFormatting.md)
 
 ## Code
