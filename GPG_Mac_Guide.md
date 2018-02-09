@@ -32,4 +32,4 @@ the file in a text-editor, and see something like this:
     -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-By Oleks Shturmov
+By Oleksandr Shturmov
