@@ -2,7 +2,7 @@
 
 ## Report Writing
 
-* [Writing Technical Reports](files/techReports.pdf)
+* [Writing Technical Reports](files/techReport.pdf)
 * [Report Formatting Guide](guides/ReportFormatting.md)
 
 ## Code
