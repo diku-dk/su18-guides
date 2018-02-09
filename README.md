@@ -5,7 +5,7 @@
 * [Writing Technical Reports](https://github.com/diku-dk/su18-guides/blob/master/files/techReport.pdf)
 
 
-* [Writing Technical Reports](<a href="data:application/octet-stream,DATA" download="https://github.com/diku-dk/su18-guides/blob/master/files/techReport.pdf">Writing Technical Reports</a>)
+<a href="data:application/octet-stream,DATA" download="* [Writing Technical Reports](https://github.com/diku-dk/su18-guides/blob/master/files/techReport.pdf)">Writing Technical Reports</a>
 * [Report Formatting Guide](guides/ReportFormatting.md)
 
 ## Code
