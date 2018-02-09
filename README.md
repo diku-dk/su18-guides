@@ -2,10 +2,7 @@
 
 ## Report Writing
 
-* [Writing Technical Reports](https://github.com/diku-dk/su18-guides/blob/master/files/techReport.pdf)
-
-
-<a href="data:application/octet-stream,DATA" download="* [Writing Technical Reports](https://github.com/diku-dk/su18-guides/blob/master/files/techReport.pdf)">Writing Technical Reports</a>
+* [Writing Technical Reports](https://github.com/diku-dk/su18-guides/blob/v1.0/files/techReport.pdf)
 * [Report Formatting Guide](guides/ReportFormatting.md)
 
 ## Code
