@@ -2,15 +2,15 @@
 
 ## Report Writing
 
-* [Writing Technical Reports](https://git.dikunix.dk/su17/Guides/builds/322/artifacts/file/su17-writing-technical-reports-v1.pdf)
-* [Report Formatting Guide](ReportFormatting.md)
+* [Writing Technical Reports](files/techReports.pdf)
+* [Report Formatting Guide](guides/ReportFormatting.md)
 
 ## Code
 
-* [Integrated Development Environment](IDE.md)
-* [C# Style Guide](CSharpStyle.md)
-* [Example C# Code Formatting](CSharpFormatting.md)
-* [Running Doxygen Locally](Doxygen.md)
-* [NUnit Guidelines](NUnit_guidelines.md)
-* [Forking DIKUArcade](ForkingDIKUArcade.md)
+* [Integrated Development Environment](guides/IDE.md)
+* [C# Style Guide](guides/CSharpStyle.md)
+* [Example C# Code Formatting](guides/CSharpFormatting.md)
+* [Running Doxygen Locally](guides/Doxygen.md)
+* [NUnit Guidelines](guides/NUnit_guidelines.md)
+* [Forking DIKUArcade](guides/ForkingDIKUArcade.md)
 
