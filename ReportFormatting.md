@@ -1,4 +1,4 @@
-# DIKU - Software Development - Report Formatting
+# Report Formatting
 
 This guide will provide some advide on how to format and structure your technical reports.
 
