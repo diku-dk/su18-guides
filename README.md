@@ -15,4 +15,4 @@
 
 ## IDE
 
-* [Rider Guide](guides/rider.md)
+* [Rider Guide](guides/rider.md) (to come..)
