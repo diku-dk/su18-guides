@@ -15,4 +15,4 @@
 ## IDE
 
 * [Rider Guide](guides/rider.md) (to come..)
-* [Rider Settings](files/RiderSettings.jar)
+* [Rider Settings](https://github.com/diku-dk/su18-guides/raw/v1.1/files/RiderSettings.jar)
