@@ -11,8 +11,8 @@
 * [Example C# Code Formatting](guides/CSharpFormatting.md)
 * [Running Doxygen Locally](guides/Doxygen.md)
 * [NUnit Guidelines](guides/NUnit_guidelines.md)
-* [Forking DIKUArcade](guides/ForkingDIKUArcade.md)
 
 ## IDE
 
 * [Rider Guide](guides/rider.md) (to come..)
+* [Rider Settings](files/RiderSettings.jar)
