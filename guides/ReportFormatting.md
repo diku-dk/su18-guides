@@ -120,8 +120,7 @@ P.S This setup can be downloaded as a .zipped folder here:
 
 ### Final notes
 
-We expect to update [su18.sty](su18.sty) during
-the course.  We will announce changes on Absalon and our GitLab. You can always
-check the version of su18.sty you are using by looking at its line 24. We will
+If `su18.sty` or any other files from this repository are changed during the course,
+the changes will be announced on Absalon as well as on this repository. We will
 insure backwards compatibility, so using a new version will not brake your
 existing LaTeX-files.
