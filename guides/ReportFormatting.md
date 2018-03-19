@@ -5,8 +5,9 @@ This guide will provide some advide on how to format and structure your technica
 The [su18](../files/su18.sty) LaTeX package provides a template for
 your LaTeX reports in Software Development.
 
-To use it, you will have to install the [Pygments](http://pygments.org/)
-package for Python:
+To use it, you will have to install [Python 3](https://www.python.org/download/releases/3.0/),
+the Python package manager [pip](https://pip.pypa.io/en/stable/installing/),
+as well as the [Pygments](http://pygments.org/) package for Python:
 
 ```
 $ pip install Pygments
@@ -103,7 +104,6 @@ $ ./latexrun --latex-args='-shell-escape' master.tex
 ```
 
 P.S. `latexrun` can be downloaded here: [latexrun](https://github.com/aclements/latexrun)
-TODO: Provide our own link!
 
 #### Using Makefile
 
