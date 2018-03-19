@@ -104,7 +104,8 @@ $ ./latexrun --latex-args='-shell-escape' master.tex
 ```
 
 P.S. `latexrun` can be downloaded here:
-[latexrun](https://github.com/diku-dk/su18-guides/raw/v1.3/files/latexrun)
+[latexrun](https://github.com/diku-dk/su18-guides/raw/v1.3/files/latexrun) or at
+the original [repository](https://github.com/aclements/latexrun).
 
 Remember to make sure that `latexrun` is an executable (`sudo chmod +x latexrun`)!
 
