@@ -1,5 +1,6 @@
-% Copyright (C) 2017 DIKU
-% Copyright (C) 2016 Oleksandr Shturmov
+
+% Copyright (C) 2018 DIKU
+% Copyright (C) 2016 Oleks
 %
 % Permission is hereby granted, free of charge, to any person obtaining a copy
 % of this software and associated documentation files (the "Software"), to deal
@@ -195,7 +196,7 @@
 }
 %%%
 
-%%% 
+%%%
 % Captions
 \PassOptionsToPackage{hang, small, bf}{caption}
 \RequirePackage{caption}
@@ -246,6 +247,11 @@ baselinestretch=1.2,
 %bgcolor=lightgray,
 fontsize=\footnotesize,
 %linenos
+%
+% allows minted to be used with latex math inside code snippets $..$,
+% e.g. as comments. Not recommended for languages such as PHP.
+mathescape=true,
+xrightmargin=25pt, % make frame lines align to text width
 }
 %%%
 
@@ -291,7 +297,7 @@ fontsize=\footnotesize,
 %%%
 
 %%%
-% Software Development 2017 Additions
+% Software Development 2018 Additions
 \NewDocumentCommand\inputcsharp{mmm}{%
   \inputminted[firstline=#1,lastline=#2]{csharp}{\dirpath #3.cs}%
 }
