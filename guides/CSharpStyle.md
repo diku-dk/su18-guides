@@ -166,8 +166,8 @@ an automated tool (e.g., a GUI designer).
 
 Our IDE has the option to help you follow this style guide.
 
-To get started, you will need to download [our
-settings](https://git.dikunix.dk/su18/Guides/-/jobs/artifacts/master/raw/RiderSettings.jar?job=RiderSettings),
+To get started, you will need to download [Rider
+Settings](https://github.com/diku-dk/su18-guides/raw/v1.1/files/RiderSettings.jar),
 and import them in your JetBrains Rider instance:
 
 * Select File, Import Settings...

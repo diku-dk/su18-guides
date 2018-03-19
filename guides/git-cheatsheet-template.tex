@@ -1,0 +1,183 @@
+\documentclass[twocolumn,landscape,10pt,a4paper]{article}
+
+% Author: Nate Murray (based on Steve Tayon's Clojure cheat sheet)
+% Comments, errors, suggestions: nate@natemurray.com
+
+% License
+% Eclipse Public License v1.0
+% http://opensource.org/licenses/eclipse-1.0.php
+
+% Packages
+\usepackage{fullpage}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{enumerate}
+\usepackage[table]{xcolor}
+
+% Set column space
+\setlength{\columnsep}{0.25em}
+
+% Define colours
+\definecolorset{hsb}{}{}{red,0,.4,0.95;orange,.1,.4,0.95;green,.25,.4,0.95;yellow,.15,.4,0.95}
+\definecolorset{hsb}{}{}{blue,.55,.4,0.95;purple,.7,.4,0.95;pink,.8,.4,0.95;blue2,.58,.4,0.95}
+\definecolorset{hsb}{}{}{magenta,.9,.4,0.95;green2,.29,.4,0.95}
+
+% Redefine sections
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{0mm}
+	{-1.7ex}{0.7ex}{\normalfont\large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}
+	{-1.7ex}{0.5ex}{\normalfont\normalsize\bfseries}}
+\makeatother
+
+% No section numbers
+\setcounter{secnumdepth}{0}
+
+% No indentation
+\setlength{\parindent}{0em}
+
+% No header and footer
+\pagestyle{empty}
+
+
+% A few shortcuts
+\newcommand{\cmd}[1] {\texttt{\textbf{{#1}}}}
+\newcommand{\cmdline}[1] {
+	\begin{tabularx}{\hsize}{X}
+			\texttt{\textbf{{#1}}}
+	\end{tabularx}
+}
+
+\newcommand{\colouredbox}[2] {
+	\colorbox{#1!40}{
+		\begin{minipage}{0.95\linewidth}
+			{
+			\rowcolors[]{1}{#1!20}{#1!10}
+			#2
+			}
+		\end{minipage}
+	}
+}
+
+% redefine enumerate env for closer spacing
+\renewenvironment{enumerate}%
+  {\begin{list}{\arabic{enumi}.}%
+     {\topsep=0in\itemsep=0in\parsep=0in\partopsep=0in\usecounter{enumi}}%
+   }{\end{list}}
+
+\begin{document}
+\twocolumn[
+  \begin{@twocolumnfalse}
+\centerline{\Large{\textbf{Git Cheat Sheet}}}
+\centerline{All of the below commands are to be prefixed with \texttt{git}.}
+\vspace{1cm}
+  \end{@twocolumnfalse}
+]
+
+\section{Basics}
+
+\colouredbox{green}{
+\subsection{Documentation}
+\cmdline{}
+\begin{tabularx}{\hsize}{lX}
+\cmd{help [cmd]} & \textit{Shows the manual entry for \texttt{[cmd]}} \\
+\end{tabularx}
+}
+
+\colouredbox{magenta}{
+\subsection{Working with remotes}
+\begin{tabularx}{\hsize}{lX}
+\cmd{clone <url>} & \textit{What does this do? } \\
+\cmd{pull} & \textit{What does this do? }  \\
+\end{tabularx}
+
+\subsection{Create a local repository}
+\begin{tabularx}{\hsize}{lX}
+\cmd{init} & \textit{What does this do? } \\
+\cmd{add .} & \textit{What does this do? } \\
+\cmd{commit} & \textit{What does this do? )} \\
+\end{tabularx}
+
+\subsection{Files}
+\begin{tabularx}{\hsize}{lX}
+\cmd{add <file>} & \textit{What does this do? } \\
+\cmd{rm <file>} & \textit{What does this do? } \\
+\cmd{mv <file>} & \textit{What does this do? } \\
+\end{tabularx}
+
+\subsection{Committing}
+\begin{tabularx}{\hsize}{lX}
+\cmd{commit -S} & \textit{What does this do?} \\
+\cmd{commit -S -{}-amend} & \textit{What does this do?} \\
+\end{tabularx}
+}
+
+
+%\colouredbox{blue}{
+%\subsection{Configuration}
+%\begin{tabularx}{\hsize}{lX}
+%\cmd{config --{}--global user.name \textbackslash}\\
+%\cmd{  "John Doe"} \textit{What does this do? } \\
+%Email:  & \cmd{config --{}--global user.email \textbackslash}\\
+%        & \cmd{  "email@example.com"} \textit{What does this do? }
+%\end{tabularx}
+%}
+
+\colouredbox{green}{
+\subsection{Browsing}
+\begin{tabularx}{\hsize}{lX}
+\cmd{status} & \textit{What does this do? } \\
+\cmd{log} & \textit{What does this do? } \\
+\cmd{blame <file>} & \textit{What does this do? } \\
+\cmd{diff} & \textit{What does this do? }
+\end{tabularx}
+}
+\newpage
+
+\section{Advanced}
+\colouredbox{yellow}{
+\section{Branching and Merging}
+\begin{tabularx}{\hsize}{lXr}
+List:     & \cmd{branch} & \textit{What does this do? } \\
+Create:   & \cmd{checkout -b new-branch} & \textit{What does this do? } \\
+Delete:   & \cmd{branch -d new-branch} & \textit{What does this do? } \\
+Checkout: & \cmd{checkout testing} & \textit{What does this do? } \\
+Merge:    & \cmd{merge testing} & \textit{What does this do? }
+\end{tabularx}
+}
+
+
+
+
+
+\colouredbox{blue2}{
+\section{Remotes}
+\begin{tabularx}{\hsize}{lXr}
+Clone: &     \cmd{clone <url>} & \textit{What does this do? }  \\
+List: &     \cmd{remote -v} & \textit{What does this do? }  \\
+Send: &     \cmd{push } & \textit{What does this do? }  \\
+      &     \cmd{push origin master} & \textit{What does this do? }  \\
+Receive: &     \cmd{pull } & \textit{What does this do? }  \\
+      &     \cmd{pull origin master} & \textit{What does this do? }  \\
+Add:  &     \cmd{remote add <name> <url>} & \textit{What does this do? }  \\
+Fetch:&     \cmd{fetch name} & \textit{What does this do? }  \\
+Checkout:&  \cmd{checkout <name/master>} & \textit{What does this do? }  \\
+\end{tabularx}
+}
+
+\begin{flushright}
+\footnotesize
+\rule{0.7\linewidth}{0.25pt}
+\verb!Adapted from Cheat Sheet by Nate Murray:          ! \\
+\verb!! \\
+\verb!$Revision: 1.1, $Date: August 31, 2010!\\
+\verb!Nate Murray (nmurray@xcombinator.com)!
+\verb!See also: http://book.git-scm.com/!
+\verb!          http://git.or.cz/course/svn.html!
+\verb!Based on Steve Taylon's Clojure Cheat Sheet!
+\end{flushright}
+
+\end{document}

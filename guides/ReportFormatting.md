@@ -2,8 +2,8 @@
 
 This guide will provide some advide on how to format and structure your technical reports.
 
-The [su18](su18.sty) LaTeX package provides a template for your LaTeX reports
-in Software Development.
+The [su18](../files/su18.sty) LaTeX package provides a template for
+your LaTeX reports in Software Development.
 
 To use it, you will have to install the [Pygments](http://pygments.org/)
 package for Python:
