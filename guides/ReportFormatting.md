@@ -5,8 +5,9 @@ This guide will provide some advide on how to format and structure your technica
 The [su18](../files/su18.sty) LaTeX package provides a template for
 your LaTeX reports in Software Development.
 
-To use it, you will have to install the [Pygments](http://pygments.org/)
-package for Python:
+To use it, you will have to install [Python 3](https://www.python.org/download/releases/3.0/),
+the Python package manager [pip](https://pip.pypa.io/en/stable/installing/),
+as well as the [Pygments](http://pygments.org/) package for Python:
 
 ```
 $ pip install Pygments
@@ -102,8 +103,10 @@ warnings printed in your terminal.
 $ ./latexrun --latex-args='-shell-escape' master.tex
 ```
 
-P.S. `latexrun` can be downloaded here: [latexrun](https://github.com/aclements/latexrun)
-TODO: Provide our own link!
+P.S. `latexrun` can be downloaded here:
+[latexrun](https://github.com/diku-dk/su18-guides/raw/v1.3/files/latexrun)
+
+Remember to make sure that `latexrun` is an executable (`sudo chmod +x latexrun`)!
 
 #### Using Makefile
 
@@ -111,7 +114,8 @@ We have created a package containing a Makefile an a default folder structure to
 really nice and easy to compile your technical report, cleaning up latex compile files
 (.aux, .log, etc.).
 
-P.S This setup can be downloaded as a .zipped folder here: [su18TechReportSample](TODO: some web page!)
+P.S This setup can be downloaded as a .zipped folder here:
+[su18TechReportSample](https://github.com/diku-dk/su18-guides/raw/v1.3/files/testSU18sty.zip)
 
 ### Final notes
 
