@@ -91,7 +91,7 @@ The technical report can be compiled in a number of different ways:
 $ pdflatex -shell-escape master.tex
 ```
 
-That is, provided you've placed [su18.sty](su18.sty) either in the same
+That is, provided you've placed `su18.sty` either in the same
 directory, or in your `~/texmf/tex/latex/` directory.
 
 #### Using `latexrun`
